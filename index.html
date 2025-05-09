@@ -16,6 +16,47 @@
     <header>
         <h1>Les monuments</h1>
     </header>
+    <p class="top">Clickez sur un monument ou son button pour avoir une description</p>
+
+    <section class="btn">
+        <div class="btn-container">
+            <button class="btn-monument" data-monument="1">Musée du Louvre</button>
+            <img src="images/img1.jpg" data-monument="1">
+        </div>
+        <div class="btn-container">
+            <button class="btn-monument" data-monument="2">La toure Eiffel</button>
+            <img src="images/img2.jpg" data-monument="2">
+        </div>
+        <div class="btn-container">
+            <button class="btn-monument" data-monument="3">L'arc de tromphe de l'etoile</button>
+            <img src="images/img3.jpg" data-monument="3">
+        </div>
+        <div class="btn-container">
+            <button class="btn-monument" data-monument="4">Cathedrale Notre Dame </button>
+            <img src="images/img4.jpg" data-monument="4">
+        </div>
+        <div class="btn-container">
+            <button class="btn-monument" data-monument="5">Sacré couer basilica</button>
+            <img src="images/img5.jpg" data-monument="5">
+        </div>
+    </section>
+
+    <div id="description" class="description">
+        <h1 id="monument-name"></h1>
+        <h3 id="monument-address"></h3>
+        <p id="monument-text"></p>
+        <div id="map-container"></div>
+    </div>
+
+    <!-- Cartes cachées -->
+    <div style="display: none;">
+        <iframe id="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5249.747835397206!2d2.335069075464716!3d48.860614600551365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sMus%C3%A9e%20du%20Louvre!5e0!3m2!1sfr!2sfr!4v1746783551360!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="map2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5249.98288205051!2d2.291906375464517!3d48.85837360070898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1746783517242!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="map3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.1832651098007!2d2.2924406754656346!3d48.87378279962443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec746d386b%3A0x8710a9c7965c5fa9!2sL&#39;Arc%20de%20Triomphe%20de%20l&#39;Etoile%2C%2075017%20Paris!5e0!3m2!1sfr!2sfr!4v1746783481748!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="map4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.2747128977103!2d2.347327175464142!3d48.85297170108914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e19ff53a01%3A0x36401da7abfa068d!2sCath%C3%A9drale%20Notre-Dame%20de%20Paris!5e0!3m2!1sfr!2sfr!4v1746783445215!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="map5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.5141206140133!2d2.340487575466529!3d48.886538398726564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e5ccbdfcb83%3A0x7080acd10c465b03!2sSacr%C3%A9-C%C5%93ur%20Basilica%2C%2035%20Rue%20du%20Chevalier%20de%20la%20Barre%2C%2075018%20Paris!5e0!3m2!1sfr!2sfr!4v1746783397372!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
     <script type="text/javascript" src="script.js"></script>
 </body>
 
